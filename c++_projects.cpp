@@ -1,20 +1,20 @@
 #include<iostream>
 using namespace std;
 // A card game example
-struct card
-{
-    int number;
-    int suit;
-};
 
-const int clubs = 0;
-const int diamonds = 1;
-const int hearts = 2;
-const int spades = 3;
-const int jack = 11;
 const int queen = 12;
 const int king = 13;
 const int ace = 14;
+const int jack = 11;
+
+enum Suit {clubs,diamonds,hearts,spades};
+
+struct card
+{
+    int number;
+    Suit suit;
+};
+
 
 int main(void)
 {
